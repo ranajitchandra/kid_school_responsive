@@ -46,10 +46,30 @@ header nav .menu ul{
     gap: 2rem;
 }
 header nav div ul li{
+    transition: 2s;
     list-style: none;
 }
-   nav div ul li a{
+header nav div ul li:hover a{
+    padding: 10px 32px;
+    background-color: orange;
+    border-radius: 8px;
+    color: #ffffff;
+    transition: .5s;
+}
+header nav div ul li a{
     text-decoration: none;
+}
+header nav div ul li .a1{
+    color: orange;
+}
+header nav div ul li .a2{
+    color: skyblue;
+}
+header nav div ul li .a3{
+    color: #05D4DF;
+}
+header nav div ul li .a4{
+    color: #5D58EF;
 }
 header nav button{
     padding: 10px 32px;
@@ -57,6 +77,15 @@ header nav button{
     border: none;
     border-radius: 8px;
     color: #ffffff;
+    transition: .5s;
+}
+header nav button:hover{
+    padding: 10px 32px;
+    background-color: rgb(17, 141, 224);
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    transition: .5s;
 }
 header .m-img{
     display: none;
@@ -88,8 +117,19 @@ header .dd i{
     background-color: black;
     color: #f2f2f2;
     padding: 10px 32px;
+    border: none;
     margin: 0 2rem;
     border-radius: 8px;
+    transition: .5s;
+}
+.hero .content button:hover{
+    background-color: rgb(17, 141, 224);
+    color: #f2f2f2;
+    border: none;
+    padding: 10px 32px;
+    margin: 0 2rem;
+    border-radius: 8px;
+    transition: .5s;
 }
 .hero img{
    width: 50%;
@@ -110,15 +150,17 @@ header .dd i{
 .curriculum .box{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    gap: 2rem;
     box-sizing: border-box;
 }
 
 .curriculum .box .card{
-    
     border-radius: 8px;
     text-align: center;
     padding: 2rem;
+}
+.curriculum .box .card:hover{
+    box-shadow: 1px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .curriculum .box .card img{
     height: 100px;
@@ -182,9 +224,20 @@ header .dd i{
 .stories .stories-btn button{
     background-color: black;
     color: #f2f2f2;
+    border: none;
     padding: 0.8rem 3rem;
     margin: 0 2rem;
     border-radius: 8px;
+    transition: .5s;
+}
+.stories .stories-btn button:hover{
+    background-color: rgb(17, 141, 224);
+    border: none;
+    color: #f2f2f2;
+    padding: 0.8rem 3rem;
+    margin: 0 2rem;
+    border-radius: 8px;
+    transition: .5s;
 }
 /* left box */
 .stories .stories-box{
@@ -195,7 +248,8 @@ header .dd i{
 .stories .stories-box .box{
     width: 50%;
     background-color: rgb(255, 255, 255);
-    border-radius: 0 0.8rem 0.8rem;
+    box-shadow: 0px 2px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 0.8rem;
 }
 
 .stories .stories-box .box img{
@@ -231,6 +285,7 @@ header .dd i{
 
 
 
+
 /* right box */
 
 .stories .stories-box .box2{
@@ -241,6 +296,7 @@ header .dd i{
 }
 .stories .stories-box .box2 .card{
     background-color: rgb(255, 255, 255);
+    box-shadow: 0px 2px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
     border-radius: 0.8rem;
 }
 .stories .stories-box .box2 .card .btn-text{
@@ -310,8 +366,14 @@ footer .items .footer-box h3{
 }
 footer .items .footer-box ul li{
     list-style: none;
-    
+    transition: .5s;
 }
+footer .items .footer-box ul li:hover a{
+    padding: 20px;
+    color: yellow;
+    transition: .3s;
+}
+
 footer .items .footer-box ul li a{
     text-decoration: none;
     color: #f2f2f2;
@@ -322,6 +384,15 @@ footer .items .as ul li{
 footer .items .kit ul{
     display: flex;
     gap: 0.5rem;
+}
+footer .items .kit ul li{
+    box-sizing: border-box;
+    transition: 1s;
+}
+footer .items .kit ul li:hover img{
+    width: 60px;
+    height: 60px;
+    transition: 1s;
 }
 
 
@@ -388,7 +459,9 @@ footer .items .kit ul{
     }
     .curriculum .box .card{
         margin:0 1rem;
+        box-shadow: 1px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
+    
     .curriculum .pagination{
         display: none;
     }

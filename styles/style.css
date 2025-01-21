@@ -97,8 +97,9 @@ header .dd i{
 /* Standard Curriculum style */
 
 .curriculum{
-    
     background-image: url('../assets/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .curriculum h1{
     font-size: 3.5rem;
@@ -166,6 +167,106 @@ header .dd i{
 }
 
 
+/* stories style */
+
+.stories{
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 196, 0, 0.181)), url('../assets/bg.png');
+    padding: 1rem 0;
+}
+.stories h1{
+    font-size: 3.5rem;
+    text-align: center;
+    padding: 1rem 0;
+}
+.stories .stories-btn button{
+    background-color: black;
+    color: #f2f2f2;
+    padding: 0.8rem 3rem;
+    margin: 0 2rem;
+    border-radius: 8px;
+}
+/* left box */
+.stories .stories-box{
+    display: flex;
+    gap: 1.2rem;
+    margin: 2rem 0;
+}
+.stories .stories-box .box{
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0 0.8rem 0.8rem;
+}
+
+.stories .stories-box .box img{
+    width: 100%;
+    border-radius: 0.8rem 0.8rem 0 0;
+}
+.stories .stories-box .box .inner-box{
+    padding: 0 2rem;
+}
+.stories .stories-box .box .inner-box .btn-text{
+    background-color: skyblue;
+    font-size: 1.2rem;
+    padding: 0.8rem;
+    border-radius: 2rem;
+    border: none;
+    position: relative;
+    top: -1.9rem;
+}
+.stories .stories-box .box .inner-box .h3-text{
+    font-size: 1.5rem;
+    padding: 0.5rem 0 1.5rem 0;
+}
+.stories .stories-box .box .inner-box p{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 1rem 0 4rem 0;
+}
+.stories .stories-btn{
+    margin: 3rem;
+    text-align: center;
+}
+
+
+
+/* right box */
+
+.stories .stories-box .box2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+    width: 50%;
+}
+.stories .stories-box .box2 .card{
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.8rem;
+}
+.stories .stories-box .box2 .card .btn-text{
+    background-color: skyblue;
+    font-size: 1rem;
+    padding: 0.8rem;
+    border-radius: 2rem;
+    border: none;
+    position: relative;
+    top: -1.9rem;
+}
+.stories .stories-box .box2 .card h3{
+    padding: 0 1rem;
+}
+.stories .stories-box .box2 .card img{
+    width: 100%;
+    border-radius: 0.8rem 0.8rem 0 0;
+}
+.stories .stories-box .box2 .card .inner-box2{
+    padding: 0 0.5rem;
+    line-height: 1.5rem;
+}
+
+
+
+
+
+
 
 
 
@@ -216,7 +317,7 @@ header .dd i{
     }
 
 
-    /* hero responsive */
+    /* curriculum responsive */
     
     .curriculum h1{
         font-size: 2rem;
@@ -232,4 +333,18 @@ header .dd i{
         display: none;
     }
 
+
+
+    /* curriculum responsive */
+
+    .stories .stories-box .box{
+        display: none;
+    }
+    .stories .stories-box .box2{
+        width: 100%;
+        padding: 0 2rem;
+    }
+    .stories .stories-box .box2 .card .btn-text{
+        font-size: 0.8rem;
+    }
 }

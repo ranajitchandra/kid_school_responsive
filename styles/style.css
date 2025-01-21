@@ -94,8 +94,76 @@ header .dd i{
    width: 50%;
 }
 
+/* Standard Curriculum style */
 
+.curriculum{
+    
+    background-image: url('../assets/bg.png');
+}
+.curriculum h1{
+    font-size: 3.5rem;
+    text-align: center;
+    padding: 4rem 0;
+}
+.curriculum .box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    box-sizing: border-box;
+}
 
+.curriculum .box .card{
+    
+    border-radius: 8px;
+    text-align: center;
+    padding: 2rem;
+}
+.curriculum .box .card img{
+    height: 100px;
+    width: 100px;
+}
+.curriculum .box .card h3{
+    font-size: 1.8rem;
+    padding: 1.5rem 0;
+}
+.curriculum .box .card p{
+    height: 8rem;
+    line-height: 2rem;
+    padding: 1.5rem 0;
+}
+.curriculum .box .card a{
+    text-decoration: none;
+    font-weight: bold;
+}
+.curriculum .box .x{
+    background-image: linear-gradient(to bottom, rgba(135, 206, 235, 0.4) 0%, rgb(255, 255, 255) 25%, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 100%);
+    border: 1px solid rgba(0, 105, 252, 0.2);
+}
+.curriculum .box .y{
+    background-image: linear-gradient(to bottom, rgba(0, 128, 0, 0.4) 0%, rgb(255, 255, 255) 25%, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 100%);
+    border: 1px solid rgba(0, 105, 252, 0.2);
+}
+.curriculum .box .z{
+    background-image: linear-gradient(to bottom, rgba(149,0,142, 0.4) 0%, rgb(255, 255, 255) 25%, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 100%);
+    border: 1px solid rgb(149,0,142, 0.2);
+}
+.curriculum .pagination{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 3rem;
+}
+.curriculum .pagination i{
+    font-size: 1.5rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: orange;
+    border-radius: 50%;
+    padding: 20px;
+    color: #ffffff;
+}
 
 
 
@@ -115,7 +183,6 @@ header .dd i{
         align-items: center;
         border-bottom: 1px solid orange;
         padding: 0.5rem;
-        
     }
     header nav{
         display: none;
@@ -139,14 +206,30 @@ header .dd i{
         max-width:100%;
         text-align: center;
         order: 1;
-        
     }
     .hero .content .title{
         font-size: 2rem;
-        
     }
     .hero img{
         width: 50%;
         margin: 1rem;
-     }
+    }
+
+
+    /* hero responsive */
+    
+    .curriculum h1{
+        font-size: 2rem;
+        padding: 5rem 0 2rem 0;
+    }
+    .curriculum .box{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .curriculum .box .card{
+        margin:0 1rem;
+    }
+    .curriculum .pagination{
+        display: none;
+    }
+
 }

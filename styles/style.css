@@ -13,6 +13,7 @@
   }
 body{
     background-color: #f2f2f2;
+    box-sizing: border-box;
 }
 main{
     max-width: 1200px;
@@ -205,7 +206,8 @@ header .dd i{
     padding: 0 2rem;
 }
 .stories .stories-box .box .inner-box .btn-text{
-    background-color: skyblue;
+    background-color: rgb(47, 155, 198);
+    color: #f2f2f2;
     font-size: 1.2rem;
     padding: 0.8rem;
     border-radius: 2rem;
@@ -243,6 +245,7 @@ header .dd i{
 }
 .stories .stories-box .box2 .card .btn-text{
     background-color: skyblue;
+    color: #f2f2f2;
     font-size: 1rem;
     padding: 0.8rem;
     border-radius: 2rem;
@@ -263,6 +266,63 @@ header .dd i{
 }
 
 
+/* footer style */
+
+footer{
+    background-color: #0b96d7;
+}
+footer .items{
+    padding:5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+}
+footer .items .s-logo{
+    grid-column: span 2;
+    width: 70%;
+}
+footer .items .footer-box .f-logo{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+footer .items .footer-box .f-logo >img{
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    padding: 10px;
+    height: 3rem;
+    width: 3rem;
+}
+footer .items .footer-box .f-logo h2{
+    color: #f2f2f2;
+}
+footer .items .footer-box p{
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 1rem 0;
+}
+footer .items .footer-box h3{
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+footer .items .footer-box ul li{
+    list-style: none;
+    
+}
+footer .items .footer-box ul li a{
+    text-decoration: none;
+    color: #f2f2f2;
+}
+footer .items .as ul li{
+    padding: 0.5rem 0;
+}
+footer .items .kit ul{
+    display: flex;
+    gap: 0.5rem;
+}
 
 
 
@@ -346,5 +406,19 @@ header .dd i{
     }
     .stories .stories-box .box2 .card .btn-text{
         font-size: 0.8rem;
+    }
+
+    /* footer responsive */
+
+    footer .items{
+        display: block;
+        padding: 5rem 1.5rem;
+    }
+    footer .items .s-logo{
+        grid-column: span 2;
+        width: 100%;
+    }
+    footer .items .as{
+        padding: 2rem 0;
     }
 }

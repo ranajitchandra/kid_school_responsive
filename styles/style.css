@@ -12,7 +12,7 @@
     margin: 0;
   }
 body{
-    background-color: #f2f2f2;
+    background-color: #f7f7f7;
     box-sizing: border-box;
 }
 main{
@@ -207,6 +207,17 @@ header .dd i{
     border-radius: 50%;
     padding: 20px;
     color: #ffffff;
+    transition: .5s;
+}
+.curriculum .pagination i:hover{
+    font-size: 1.5rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: rgb(0, 170, 216);
+    border-radius: 50%;
+    padding: 20px;
+    color: #ffffff;
+    transition: .3s;
 }
 
 
@@ -472,6 +483,10 @@ footer .items .kit ul li:hover img{
 
     .stories .stories-box .box{
         display: none;
+    }
+    .stories h1{
+        font-size: 2rem;
+        padding: 1.5rem 0;
     }
     .stories .stories-box .box2{
         width: 100%;
